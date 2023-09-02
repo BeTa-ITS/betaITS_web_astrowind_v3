@@ -51,6 +51,7 @@ export default defineConfig({
           'business-contact',
           'database',
         ],
+        mdi: ['*'],
       },
     }),
 

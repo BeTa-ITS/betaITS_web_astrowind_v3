@@ -6,6 +6,17 @@
   margin-top: 0;
 }
 
+@font-face {
+  @font-face {
+    font-family: 'Handel Gothic';
+    src: url('../fonts/HandelGothik.eot');
+    src:
+      url('../fonts/HandelGothik.woff2') format('woff2'),
+      url('..//fonts/HandelGothik.woff') format('woff'),
+      url('../fonts/HandelGothik.ttf') format('truetype');
+  }
+}
+
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);

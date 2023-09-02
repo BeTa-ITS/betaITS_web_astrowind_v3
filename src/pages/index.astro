@@ -24,26 +24,23 @@ const metadata = {
   <Hero
     callToAction={{
       targetBlank: true,
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
+      text: 'Interesse?',
+      href: 'https://calendly.com/bennytasche/betaits-kennenlernen',
     }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
+    callToAction2={{ text: 'Wie funktionierts?', href: '#steps' }}
+    image={{ src: '~/assets/images/unsplash-NuFUbftUu_s-unsplash.jpg', alt: 'Notebook, Kaffee und Notizblock auf Schreibtisch' }}
   >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 3.0</span> + Tailwind CSS
+    <Fragment slot="title" class="font-gothic tracking-wide">
+      IT, so wie sie sein soll!
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 3.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages
-      & Blogs.
+      <p class="text-xl font-light text-gray-600 mb-8 dark:text-slate-400">
+				Wenn Sie sich "einfache", "verständliche" und "unkomplizierte" IT wünschen, sind wir die richtigen für Sie. Wir
+				kümmern uns um Best Practices, Backup & Revovery, IT-Security, <span class="inline sm:hidden">...</span><span
+					class="hidden sm:inline">Hosting, Netzwerke, Betrieb von Cloudinfrastrukturen, Patchmanagement und mehr.</span
+				>
+			</p>
     </Fragment>
   </Hero>
 
@@ -214,33 +211,33 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
+    title="Wie funktioniert Managed IT Service?"
+		items={[
+			{
+				title: 'Schritt 1: <span class="font-medium">Analyse</span>',
+				description:
+					'Unsere IT-Experten nehmen Ihre Infrastruktur unter die Lupe und bereiten dann das passende Angebot für Sie vor.',
+				icon: 'tabler:arrow-down',
+			},
+			{
+				title: 'Schritt 2: <span class="font-medium">Vorbereitung</em>',
+				description:
+					'Wir bereiten Ihre IT-Infrastruktur optimal vor und dokumentieren alles, damit wir unseren Service und Support effizient ausführen können.',
+				icon: 'tabler:arrow-down',
+			},
+			{
+				title: 'Schritt 3: <span class="font-medium">Betrieb</span>',
+				description:
+					'Die Services sind installiert und betriebsbereit. Wir garantieren den laufenden Betrieb und Sie kümmern sich um die wichtigeren Themen.',
+				icon: 'tabler:arrow-down',
+			},
+			{
+				title: 'Ready!',
+				icon: 'tabler:check',
+			},
+		]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '~/assets/images/linkedin-sales-solutions-EI50ZDA-l8Y-unsplash.jpg',
       alt: 'Steps image',
     }}
   />
@@ -248,61 +245,29 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
+    title="Unsere Managed Services"
+    subtitle="Unsere Pakete bestehen aus mehreren kleinen Bausteinen, die einzeln gebucht, oder in Paketen zusammengefasst werden können"
+    tagline="Pakete"
+	items={[
+			{
+				title: 'Managed Endpoint',
+				description:
+					'Wir stellen sicher, dass ihre Endgeräte immer in einem definierten Zustand beim Nutzer ankommen und genutzt werden können.',
+				icon: 'mdi:laptop',
+			},
+			{
+				title: 'Managed Infrastructure',
+				description:
+					'IT-Landschaften sind hoch komplex. Server, Netzwerk und Cloudanwendungen sollen betrieben und überwacht werden. Wir können das!',
+				icon: 'mdi:microsoft-azure',
+			},
+			{
+				title: 'Managed M365',
+				description:
+					'Microsofts Productivity Lösung ist kaum mehr wegzudenken, wir kennen die Werkzeuge wie unsere Westentasche und helfen ihnen bei Konfiguration und Betrieb.',
+				icon: 'mdi:microsoft-office',
+			},
+		]}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
